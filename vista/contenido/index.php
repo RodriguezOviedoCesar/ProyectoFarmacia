@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
     <title>Farmacia</title>
     <link rel="stylesheet" href="../otros/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../otros/iconos/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -36,12 +39,20 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio
-                                
+                                <a class="nav-link active" aria-current="page" href="#">Nosotros
+
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Link</a>
+                                <a class="nav-link active" aria-current="page" href="#">Doctores
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Login</a>
                             </li>
                         </ul>
                         <form class="d-flex">
@@ -54,10 +65,59 @@
             </nav>
         </div>
     </div>
-
+    <div id="descuentos">
+        <img src="http://via.placeholder.com/1266x188" class="img-fluid" alt="...">
+    </div>
+    <div id="carrusel">
+        <div id="Indicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#Indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#Indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#Indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#Indicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#Indicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#Indicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#Indicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="http://via.placeholder.com/1518x400" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="http://via.placeholder.com/1518x400" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="http://via.placeholder.com/1518x400" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="http://via.placeholder.com/1518x400" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="http://via.placeholder.com/1518x400" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="http://via.placeholder.com/1518x400" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="http://via.placeholder.com/1518x400" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Indicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#Indicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 </body>
+
 <head>
     <script type="text/javascript" src="../otros/bootstrap/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../otros/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../otros/iconos/js/all.js"></script>
 </head>
+
 </html>
