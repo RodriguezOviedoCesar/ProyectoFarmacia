@@ -51,8 +51,23 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Blog</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="login.php">Login</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Login
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="registro.php" style="padding-left: 10px;">
+                                            <i class="fas fa-user-plus"></i>
+                                            Registrarme
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" href="inicio.php" style="padding-left: 10px;">
+                                            <i class="fas fa-user"></i>
+                                            Inicar secci&oacuten</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <form class="d-flex">
