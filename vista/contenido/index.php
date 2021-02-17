@@ -44,7 +44,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Doctores
+                                <a class="nav-link active" aria-current="page" href="/modelo/doctores.php">Doctores
 
                                 </a>
                             </li>
