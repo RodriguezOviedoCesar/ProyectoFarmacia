@@ -112,6 +112,31 @@
             </button>
         </div>
     </div>
+    <div id="cajitas">
+        <div id="cajitas1">
+            <div id="cajitasin">
+                <a href="">
+                    <span>
+                        <img src="http://via.placeholder.com/418x283" alt="promocion" title="promocion">
+                    </span>
+                </a>
+            </div>
+            <div id="cajitasin">
+                <a href="">
+                    <span>
+                        <img src="http://via.placeholder.com/418x283" alt="promocion" title="promocion">
+                    </span>
+                </a>
+            </div>
+            <div id="cajitasin">
+                <a href="">
+                    <span>
+                        <img src="http://via.placeholder.com/418x283" alt="promocion" title="promocion">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 <head>
