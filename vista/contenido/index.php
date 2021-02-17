@@ -137,6 +137,12 @@
             </div>
         </div>
     </div>
+    <footer id="footer" class="container-fluid bg-dark text-center text-lg-start">
+        <div id="contenedor">
+            <div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <head>
