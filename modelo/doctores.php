@@ -30,12 +30,20 @@ $result = $mysqli->query($sql);
                     <th>COLEGIADO</th>
                     <th>CARGO</th>
                 </tr>
+
+                <?php
+                
+                if($result){
+                    if($result->num_rows>0){
+                        while($doctores = $result->fetch_assoc()){ 
+                ?>
+
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
+                    <td><?php echo $doctores ['iddoctor']?></td>
+                    <td><?php echo $doctores ['Nombre']?></td>
+                    <td><?php echo $doctores ['Especialidad']?></td>
+                    <td>CMP: <?php echo $doctores ['ncolegiado']?></td>
+                    <td><?php echo $doctores ['Cargo']?></td>
                     <td>
                         <a href="">
                             <button>
@@ -51,6 +59,24 @@ $result = $mysqli->query($sql);
                         </a>
                     </td>
                 </tr>
+                <?php
+                                }
+                            }else{
+                                $errors[] = "No hay registros pendientes";
+                            }
+                        } else{
+                            $errors[] = "Lo sentimos intentalo mas tarde";
+                        }    
+                        
+                        
+                        if(count($errors)>0){
+                            echo"<div class  = 'errores'>";
+                            foreach($error as $errors){
+                                echo"El error es ".$error." nro de error ".$errors;
+                            }
+                            echo"</div>";
+                        }
+                ?>
             </table>
             <a href="">
                 <button>
