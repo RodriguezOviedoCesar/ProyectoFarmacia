@@ -30,7 +30,7 @@ $result = $mysqli->query($sql);
             <div id="img">
                 <img src="../vista/imagenes/logo.png" alt="logo" title="logo">
             </div>
-            <table id="tabledoctor" class="table table-xl">
+            <table id="tabledoctor" class="table table-xl" style="size: 4;">
                 <tr class="table-dark">
                     <th>ID</th>
                     <th>NOMBRE</th>
@@ -46,7 +46,7 @@ $result = $mysqli->query($sql);
                         while ($doctores = $result->fetch_assoc()) {
                 ?>
 
-                            <tr>
+                            <tr style="overflow-y:scroll;">
                                 <td><?php echo $doctores['iddoctor'] ?></td>
                                 <td><?php echo $doctores['Nombre'] ?></td>
                                 <td><?php echo $doctores['Especialidad'] ?></td>
@@ -54,7 +54,9 @@ $result = $mysqli->query($sql);
                                 <td><?php echo $doctores['Cargo'] ?></td>
                                 <td style="border: none;">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                        <a href="">
+                                        <a href="../controlador/borrar.php?iddoctor=<?php 
+                                            echo $doctores ['iddoctor']
+                                        ?>">
                                             <button class="btn btn-danger me-md-2" type="button">
                                                 <i class="fas fa-trash"></i>
                                             </button>
